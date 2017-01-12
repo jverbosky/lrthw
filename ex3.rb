@@ -14,8 +14,9 @@ puts "Roosters #{100 - 225 * 3 % 4}"
 # This line just outputs the string again
 puts "Now I will count the eggs:"
 
-# This line outputs: 7
-puts 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+# This line outputs: 7 (originally)
+# Added .to_f method so float returned instead of integer
+puts 3 + 2 + 1 - 5 + 4 % 2 - 1.to_f / 4 + 6
 
 # This line yet again outputs the string verbatim
 puts "Is it true that 3 + 2 < 5 - 7?"
