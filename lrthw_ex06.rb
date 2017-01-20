@@ -51,7 +51,11 @@ puts w + e
 # 2) Lines 8, 17, 26, 30 and 36.
 # 3) Nope, there are five place.
 # 4) The plus operator performs a concatenation when used with strings.
-# 5) It would work for everything except line 30, which has single quotes around the interpolated variable.
+# 5) It would work for everything except the lines that use string interpolation and line 30, 
+#    which has single quotes around the interpolated variable.
 #    For this to continue working with outer single quotes, you would need to replace the inner single quotes
 #    with double quotes.  Otherwise, Ruby will interpret the first inner single quote as pairing with the 
 #    first outer single quote and the output would not be as intended.
+#
+#    Note - I missed the "single quotes + string interpolation being ignored" part the first time around.
+#    Lesson learned...
