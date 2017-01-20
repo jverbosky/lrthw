@@ -4,7 +4,7 @@
 
 print "There are two doors in front of you.\nWhich will you open - the door on the left or the right? "
 door = $stdin.gets.chomp 
-#door = ARGV
+#door = ARGV.first
 print ".....\n"
 print "Now you are standing in a room with stairs going up and down.\nWhich way, pal? "
 stairs = $stdin.gets.chomp
