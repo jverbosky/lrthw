@@ -32,3 +32,14 @@ smaller = number / 100
 puts "A smaller number is #{smaller}."
 
 # 0) Comments added
+# 1) Changes the object to a floating-point number
+# 2) Done.
+
+print "Hey man, got any change? "
+change = gets.chomp.to_f
+returned = change / 10
+puts "Here's 10\% back: #{returned}"
+
+# Console output:
+# Hey man, got any change? 103.4
+# Here's 10% back: 10.34
