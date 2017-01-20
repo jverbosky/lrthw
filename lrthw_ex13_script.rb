@@ -15,8 +15,10 @@ print ".....\n"
 print "As you #{action}, an earthquake starts shaking the walls apart. This just isn't your day!\nAny final words? "
 final_words = $stdin.gets.chomp
 print ".....\n"
-puts "In your last moments of conciousness, your life flashes before your eyes.
+puts """
+In your last moments of conciousness, your life flashes before your eyes.
 You see yourself opening the door on the #{door} and going #{stairs} the stairs.
 You decide to #{action} after falling down the stairs and breaking your leg.
-Sadly, your final cry of \"#{final_words}\"  is silenced prematurely as the walls come down upon you."
-print ".....\n"
+Sadly, your final cry of \"#{final_words}\"  is silenced prematurely as the walls come down upon you.
+.....\n
+"""
