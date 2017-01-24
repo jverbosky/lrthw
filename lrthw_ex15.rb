@@ -36,6 +36,7 @@ txt_again = open(file_again)
 # Changed to a puts statement for cleaner output when program runs
 puts txt_again.read
 
+=begin
 # Use the .close method on txt and txt_again to close the file (opened twice)
 # http://ruby-doc.org/core-2.0.0/IO.html#method-i-close
 txt.close
@@ -47,6 +48,7 @@ puts txt_again.read
 # Should get:
 #    lrthw_ex15.rb:45:in `read': closed stream (IOError)
 #        from lrthw_ex15.rb:45:in `<main>'
+=end
 
 # Study Drills
 # 1) Added comments before getting into the Study Drills section
