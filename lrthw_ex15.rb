@@ -7,6 +7,8 @@
 # Need to specify .ordinal when assigning to a single variable
 # filename = ARGV.first # gets the first argument
 
+# Commenting out lines per Study Drills step 5
+=begin
 # first argument > name of file to specify (lrthw_ex_15_sample.txt)
 filename = ARGV.first
 
@@ -21,9 +23,8 @@ puts "Here's your file #{filename}:"
 # http://ruby-doc.org/core-2.0.0/IO.html#method-i-read
 # Changed to a puts statement for cleaner output when program runs
 puts txt.read
+=end
 
-# Commenting out lines per Study Drills step 4
-=begin
 # User prompt to enter the name of the file specified earlier via ARGV.first
 print "Type the filename again: "
 
@@ -37,9 +38,11 @@ txt_again = open(file_again)
 # can be collected when initially running the program (ARGV) or during the program ($stdin.gets.chomp)
 # Changed to a puts statement for cleaner output when program runs
 puts txt_again.read
-=end
 
 # 1) Added comments before getting into the Study Drills section
 # 2) Already done while adding comments
 # 3) Understood
 # 4) Done
+# 5) Using $stdin.gets.chomp allows you to process multiple files during the program with
+#    (potentially, using a loop) one prompt.  With ARGV, you are limited to the file specified
+#    when the program is initially run.
