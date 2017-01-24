@@ -22,6 +22,8 @@ puts "Here's your file #{filename}:"
 # Changed to a puts statement for cleaner output when program runs
 puts txt.read
 
+# Commenting out lines per Study Drills step 4
+=begin
 # User prompt to enter the name of the file specified earlier via ARGV.first
 print "Type the filename again: "
 
@@ -35,5 +37,9 @@ txt_again = open(file_again)
 # can be collected when initially running the program (ARGV) or during the program ($stdin.gets.chomp)
 # Changed to a puts statement for cleaner output when program runs
 puts txt_again.read
+=end
 
-# 0) Added comments before getting into the Study Drills section
+# 1) Added comments before getting into the Study Drills section
+# 2) Already done while adding comments
+# 3) Understood
+# 4) Done
