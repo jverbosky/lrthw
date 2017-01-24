@@ -7,8 +7,6 @@
 # Need to specify .ordinal when assigning to a single variable
 # filename = ARGV.first # gets the first argument
 
-# Commenting out lines per Study Drills step 5
-=begin
 # first argument > name of file to specify (lrthw_ex_15_sample.txt)
 filename = ARGV.first
 
@@ -23,7 +21,6 @@ puts "Here's your file #{filename}:"
 # http://ruby-doc.org/core-2.0.0/IO.html#method-i-read
 # Changed to a puts statement for cleaner output when program runs
 puts txt.read
-=end
 
 # User prompt to enter the name of the file specified earlier via ARGV.first
 print "Type the filename again: "
@@ -39,6 +36,19 @@ txt_again = open(file_again)
 # Changed to a puts statement for cleaner output when program runs
 puts txt_again.read
 
+# Use the .close method on txt and txt_again to close the file (opened twice)
+# http://ruby-doc.org/core-2.0.0/IO.html#method-i-close
+txt.close
+txt_again.close
+
+# Verify that files are closed
+puts txt.read
+puts txt_again.read
+# Should get:
+#    lrthw_ex15.rb:45:in `read': closed stream (IOError)
+#        from lrthw_ex15.rb:45:in `<main>'
+
+# Study Drills
 # 1) Added comments before getting into the Study Drills section
 # 2) Already done while adding comments
 # 3) Understood
@@ -46,3 +56,8 @@ puts txt_again.read
 # 5) Using $stdin.gets.chomp allows you to process multiple files during the program with
 #    (potentially, using a loop) one prompt.  With ARGV, you are limited to the file specified
 #    when the program is initially run.
+# 6) Yes, but via irb, had to specify the file name in quotes (String) for it to work:
+#      filename = "lrthw_ex15_sample.txt"
+#      txt = open(filename)
+#      puts txt.read
+# 7) Done
